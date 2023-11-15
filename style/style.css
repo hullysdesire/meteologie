@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    /* background-color: aquamarine; */
+    overflow-x: hidden;
+}
+
+.badge-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../asset/Météo\ _\ 17\ départements\ en\ vigilance\ orange\ pluie-inondation\,\ orages\ et\ crues.jpg );
+    background-repeat: repeat;
+    background-size: cover; /* Ajustez la taille de l'image pour couvrir tout le conteneur */
+    animation: fadeInOut 10s infinite alternate; /* Ajustez la durée et le comportement de l'animation selon vos besoins  */
+
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-image: url(../asset/Météo\ _\ 17\ départements\ en\ vigilance\ orange\ pluie-inondation\,\ orages\ et\ crues.jpg );
+        background-repeat: repeat;
+        background-size: cover; /* Ajustez la taille de l'image pour couvrir tout le conteneur */
+        animation: fadeInOut 10s infinite alternate; /* Ajustez la durée et le comportement de l'animation selon vos 
+   besoins  */
+    }
+}
+
+
+
+
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 3; 
+  }
+}
+
+
+
+.badge-title h1, h3 {
+    text-align: center;
+    /* margin: 50px; */
+}
+
+
+form{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.element-temps1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    flex-wrap: wrap;
+
+
+    @media screen and (max-width: 768px){
+        font-size: 30px;
+    }
+
+}
+
+
+.element-temps2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px){
+        font-size: 30px;
+    }
+
+    
+
+}
+
+.box-element{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+
+
+    @media screen and (max-width: 768px){
+        height: 150px;
+        width: 150px;
+     
+    }
+
+}
+
+.boite-box{
+    width: 500px;
+    margin: 0 auto;
+}
+
+button{
+    width: 350px;
+    background-color: aliceblue;
+}
+
+button :hover{
+    background-color: #FEF00A;
+    pointer-events: fill;
+}
+
+
+#ville{
+    background-color: rgba(204, 203, 255, 0.377);
+}
+
+#temp{
+    background-color: rgba(204, 203, 255, 0.377);
+}
+
+#humidite{
+    background-color: rgba(204, 203, 255, 0.377);
+}
+
+#vent{
+    background-color: rgba(204, 203, 255, 0.377);
+}
